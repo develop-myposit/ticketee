@@ -10,3 +10,4 @@ tmp/**/*
 .sass-cache/
 # Ignore application configuration
 /config/application.yml
+/.idea
