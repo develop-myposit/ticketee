@@ -7,6 +7,13 @@ gem 'rails', '3.1.12'
 
 gem 'pg'
 
+group :development do
+   gem "better_errors"
+   gem "binding_of_caller"
+   gem 'webrick', '~> 1.3.1'
+   gem 'capistrano'
+   gem 'cap-ssh-key-man'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,19 +34,8 @@ gem 'jquery-rails'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
-group :test do
-  gem 'cucumber-rails', '1.0.6'
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'factory_girl', '1.3.3'
+group :production do
+   gem 'unicorn'
 end
 
 group :test, :development do
