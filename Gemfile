@@ -6,6 +6,7 @@ gem 'rails', '3.1.12'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'dynamic_form', '1.1.4'
 
 group :development do
    gem "better_errors"
@@ -20,7 +21,6 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
-  gem 'dynamic_form', '1.1.4'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
