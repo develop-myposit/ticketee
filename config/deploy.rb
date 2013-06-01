@@ -5,11 +5,11 @@ load "config/recipes/nginx"
 load "config/recipes/unicorn"
 load "config/recipes/postgresql"
 load "config/recipes/nodejs"
-load "config/recipes/rbenv"
+# load "config/recipes/rbenv"
 load "config/recipes/check"
 load "config/recipes/rrake"
 
-server "u12s", :web, :app, :db, primary: true
+server "ticketee", :web, :app, :db, primary: true
 
 set :user, "ticketee"
 set :application, "ticketee"
