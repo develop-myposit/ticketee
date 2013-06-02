@@ -7,6 +7,8 @@ gem 'rails', '3.1.12'
 
 gem 'pg'
 gem 'dynamic_form', '1.1.4'
+gem 'devise', '~> 1.4.3'
+
 
 group :development do
    gem "better_errors"
@@ -39,11 +41,11 @@ group :production do
 end
 
 group :test do
-    gem 'cucumber-rails','1.0.6', :require => false
-    gem 'database_cleaner', '0.7.0'
+  gem 'cucumber-rails','1.0.6', :require => false
+  gem 'database_cleaner', '0.7.0'
   gem 'capybara', '1.1.1'
   gem 'factory_girl_rails', '1.2.0'
-
+  gem 'email_spec'
 end
 
 group :test, :development do
